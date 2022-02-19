@@ -1,5 +1,6 @@
 # Hello Word en Assembleur
 
--> Voici un Hello Word en assembleur, j'ai expliqué le code dans cette photo : 
+-> Voici un Hello Word en assembleur, j'ai expliqué le code dans cette photo :
 
-[](./Explication Hello Word.png)
+https://github.com/RxphGui/Assembly/blob/main/Hello%20Word/Explication%20.png
+[](./Explication.png)
