@@ -10,6 +10,7 @@ section .rodata
 section .text
 
 _start :
+
     call _xoring // mettre les registres à 0
     mov rax, 0x1 // On met le sys_write 
     mov rdi, 0x1 // On met le unsigned int fd
@@ -19,6 +20,7 @@ _start :
     jmp _exit 
 
 _xoring :
+
     xor rax, rax // On sait que a x a = 0
     xor rdi, rdi // Ça nous permet de mettre
     xor rsi, rsi // Les registres à 0
@@ -26,6 +28,7 @@ _xoring :
     ret 
 
 _exit :
+
     mov rax, 0x3C // On met le sys_close
     mov rdi, 0 // On met le unsigned int fd
     syscall // Notre Appel Kernel
