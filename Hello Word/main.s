@@ -10,6 +10,7 @@ section .rodata
 section .text
 
 _start :
+
     call _xoring
     mov rax, 0x1
     mov rdi, 0x1
@@ -19,6 +20,7 @@ _start :
     jmp _exit
 
 _xoring :
+
     xor rax, rax 
     xor rdi, rdi
     xor rsi, rsi
@@ -26,6 +28,7 @@ _xoring :
     ret
 
 _exit :
+
     mov rax, 0x3C
     mov rdi, 0
     syscall
